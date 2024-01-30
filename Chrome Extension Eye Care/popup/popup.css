@@ -1,0 +1,79 @@
+body {
+    height: 300px;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    padding: 10px;
+    color: #F55F2D;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background: linear-gradient(to right, #F55F2D, #F23D3F, #FF0B6D);
+    color: #333;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.button-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button-content button {
+    background-color: #FF0B6D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.button-content button:hover {
+    background-color: #F23D3F;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 40px);
+}
+
+.progress-ring__circle {
+    stroke-width: 5; /* Increase this to make the stroke thicker */
+    transition: 0.35s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+@keyframes countdown {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#time {
+    font-size: 20px;
+    fill: #F23D3F;
+}
+
+* {
+    border-radius: 12px;
+}

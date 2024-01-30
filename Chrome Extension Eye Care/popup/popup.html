@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= stylesheet href="popup.css">
+    <title>20-20-20 Eye Care Timer</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../icon.png" />
+    </div>
+    <div class="button-content">
+        <button id="start-timer-btn">Start Timer</button>
+        <button id="reset-timer-btn">Reset Timer</button>
+        <button id="add-task-btn">Add Task</button>
+        <button id="options-btn">Time Options</button>
+    </div>
+    <div class="footer-content">
+        <div id="task-container"></div>
+        <svg class="progress-ring" width="120" height="120">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#F55F2D;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#F23D3F;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FF0B6D;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <circle class="progress-ring__circle" stroke="url(#gradient)" stroke-width="4" fill="transparent" r="48" cx="60" cy="60"/>
+            <text x="50%" y="50%" text-anchor="middle" stroke="#51c5cf" stroke-width="2px" dy=".3em" id="time">00:00</text>
+        </svg>
+    </div>
+</body>
+<script src="popup.js"></script>
+</html>
